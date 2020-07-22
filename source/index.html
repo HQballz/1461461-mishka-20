@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>HTML Academy: Мишка</title>
   </head>
-  <body>
+  <body class="body">
+    <header class="header">
+      <a class="header__logo">
+        <img src="https://via.placeholder.com/150x150" width="85" height="35" alt="Магазин Мишка">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list nav-list">
+          <li class="nav-list__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+      <section class="intro">
+        <h2 class="intro__title">Милые штуки ручной работы для дома</h2>
+          <div class="intro__examples">
+            <div class="intro__item--interior"><a href="#">Предметы интерьера</a></div>
+            <div class="intro__item--toys"><a href="#">Детские игрушки</a></div>
+          </div>
+      </section>
+    </header>
 
+    <main class="main">
+      <section class="intro-catalog">
+        <h2 class="intro-catalog__title">Вязаные корзинки</h2>
+        <h3 class="intro-catalog__title-accent">Товар недели</h3>
+        <p class="intro-catalog__depiction">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <dl class="intro-catalog__list product-characteristics">
+          <dt class="product-characteristics__type">Цвет:</dt>
+          <dd class="product-characteristics__value">&laquo;Тиффани&raquo;/серый</dd>
+          <dt class="product-characteristics__type">Диаметр:</dt>
+          <dd class="product-characteristics__value">25 см</dd>
+          <dt class="product-characteristics__type">Высота:</dt>
+          <dd class="product-characteristics__value">15 см</dd>
+        </dl>
+        <img src="https://via.placeholder.com/150x150" width="260" height="315" alt="Вязаные корзинки">
+        <span class="product-price">Цена: 990 руб.</span>
+        <a class="intro-catalog__button button" href="form.html">Заказать</a>
+      </section>
+
+      <section class="advantages">
+        <h2 class="advantages__title">Коротко о нас:</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item--ecology">Экологически чистые материалы</li>
+          <li class="advantages__item--Scandinavian">Скандинавский стиль по российской цене</li>
+          <li class="advantages__item--likes">Увеличивает лайки на фотографиях</li>
+          <li class="advantages__item--connection">Связано вручную с любовью и умилением</li>
+          <li class="advantages__item--support">Поддержка отечественного производителя</li>
+          <li class="advantages__item--gift">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://instagram.com">Мы в Инстаграм</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://facebook.com">Мы в Фэйсбук</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com/">Мы в Твиттер</a>
+        </li>
+      </ul>
+
+      <div class="footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
   </body>
 </html>
