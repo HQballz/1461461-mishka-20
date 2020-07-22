@@ -35,7 +35,7 @@
     <main class="main">
       <p class="form-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form action="https://echo.htmlacademy.rus" class="form" method="get">
-        <fieldset class="form__radio radio-filter">
+        <fieldset class="form__filter radio-filter">
           <legend class="form__legend">Тип</legend>
           <ul class="form__list">
             <li class="form__item">
@@ -49,7 +49,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__checkbox checkbox-filter">
+        <fieldset class="form__filter checkbox-filter">
           <legend class="form__legend">Цвет</legend>
           <ul class="form__list">
             <li class="form__item">
@@ -77,6 +77,16 @@
               <label for="orange" class="form__label">Оранжевый</label>
             </li>
           </ul>
+        </fieldset>
+
+        <fieldset class="form__shape">
+          <legend class="form__legend">ФИО</legend>
+          <label for="name" class="form__label form__label--shape">Имя:</label>
+          <input type="text" id="name" name="name" placeholder="Введите ваше имя*" class="form__shape-text" required>
+          <label for="surname" class="form__label form__label--shape">Фамилия:</label>
+          <input type="text" id="surname" name="surname" placeholder="Укажите фамилию*" class="form__shape-text" required>
+          <label for="middle-name" class="form__label form__label--shape">Отчество:</label>
+          <input type="text" id="middle-name" name="middle-name" placeholder="Отчество, если желаете" class="form__shape-text">
         </fieldset>
       </form>
     </main>
