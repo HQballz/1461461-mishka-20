@@ -28,10 +28,57 @@
           </li>
         </ul>
       </nav>
+
+      <h1 class="form-title">Вязание на заказ</h1>
     </header>
 
     <main class="main">
+      <p class="form-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form action="https://echo.htmlacademy.rus" class="form" method="get">
+        <fieldset class="form__radio radio-filter">
+          <legend class="form__legend">Тип</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <input type="radio" id="accessory" name="accessory" class="radio-filter__input" checked>
+              <label for="accessory" class="form__label">Аксессуар для интерьера</label>
+            </li>
+            <li class="form__item">
+              <input type="radio" id="toy" name="toy" class="radio-filter__input">
+              <label for="toy" class="form__label">Детская игрушка</label>
+            </li>
+          </ul>
+        </fieldset>
 
+        <fieldset class="form__checkbox checkbox-filter">
+          <legend class="form__legend">Цвет</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <input type="checkbox" id="white" name="white" class="checkbox-filter__input" checked>
+              <label for="white" class="form__label">Белый</label>
+            </li>
+            <li class="form__item">
+              <input type="checkbox" id="gray" name="gray" class="checkbox-filter__input" checked>
+              <label for="gray" class="form__label">Серый</label>
+            </li>
+            <li class="form__item">
+              <input type="checkbox" id="tiffany" name="tiffany" class="checkbox-filter__input">
+              <label for="tiffany" class="form__label">&laquo;Тиффани&raquo;</label>
+            </li>
+            <li class="form__item">
+              <input type="checkbox" id="black" name="black" class="checkbox-filter__input">
+              <label for="black" class="form__label">Черный</label>
+            </li>
+            <li class="form__item">
+              <input type="checkbox" id="pink" name="pink" class="checkbox-filter__input">
+              <label for="pink" class="form__label">Розовый</label>
+            </li>
+            <li class="form__item">
+              <input type="checkbox" id="orange" name="orange" class="checkbox-filter__input">
+              <label for="orange" class="form__label">Оранжевый</label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
     </main>
 
     <footer class="footer">
