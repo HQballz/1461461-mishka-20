@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Form</title>
   </head>
   <body class="body">
     <header class="header">
@@ -29,54 +29,34 @@
         </ul>
       </nav>
 
-      <h1 class="form-title title">Вязание на заказ</h1>
+      <h1 class="title">Вязание на заказ</h1>
     </header>
 
     <main class="main">
-      <p class="form-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <p class="main-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form action="https://echo.htmlacademy.rus" class="form" method="get">
-        <fieldset class="form__filter radio-filter">
+        <fieldset class="form__filter">
           <legend class="form__legend">Тип</legend>
-          <ul class="form__list">
-            <li class="form__item">
-              <input type="radio" id="accessory" name="accessory" class="radio-filter__input" checked>
+              <input type="radio" id="accessory" name="accessory" class="form__radio" checked>
               <label for="accessory" class="form__label">Аксессуар для интерьера</label>
-            </li>
-            <li class="form__item">
-              <input type="radio" id="toy" name="toy" class="radio-filter__input">
+              <input type="radio" id="toy" name="toy" class="form__radio">
               <label for="toy" class="form__label">Детская игрушка</label>
-            </li>
-          </ul>
         </fieldset>
 
-        <fieldset class="form__filter checkbox-filter">
+        <fieldset class="form__filter">
           <legend class="form__legend">Цвет</legend>
-          <ul class="form__list">
-            <li class="form__item">
-              <input type="checkbox" id="white" name="white" class="checkbox-filter__input" checked>
+              <input type="checkbox" id="white" name="white" class="form__checkbox" checked>
               <label for="white" class="form__label">Белый</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="gray" name="gray" class="checkbox-filter__input" checked>
+              <input type="checkbox" id="gray" name="gray" class="form__checkbox" checked>
               <label for="gray" class="form__label">Серый</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="tiffany" name="tiffany" class="checkbox-filter__input">
+              <input type="checkbox" id="tiffany" name="tiffany" class="form__checkbox">
               <label for="tiffany" class="form__label">&laquo;Тиффани&raquo;</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="black" name="black" class="checkbox-filter__input">
+              <input type="checkbox" id="black" name="black" class="form__checkbox">
               <label for="black" class="form__label">Черный</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="pink" name="pink" class="checkbox-filter__input">
+              <input type="checkbox" id="pink" name="pink" class="form__checkbox">
               <label for="pink" class="form__label">Розовый</label>
-            </li>
-            <li class="form__item">
-              <input type="checkbox" id="orange" name="orange" class="checkbox-filter__input">
+              <input type="checkbox" id="orange" name="orange" class="form__checkbox">
               <label for="orange" class="form__label">Оранжевый</label>
-            </li>
-          </ul>
         </fieldset>
 
         <fieldset class="form__shape">
@@ -101,9 +81,9 @@
 
     <footer class="footer">
       <div class="social">
-          <a class="social__link social__link--instagram" href="https://instagram.com">Мы в Инстаграм</a>
-          <a class="social__link social__link--facebook" href="https://facebook.com">Мы в Фэйсбук</a>
-          <a class="social__link social__link--twitter" href="https://twitter.com/">Мы в Твиттер</a>
+        <a class="social__link social__link--instagram" href="https://instagram.com">Мы в Инстаграм</a>
+        <a class="social__link social__link--facebook" href="https://facebook.com">Мы в Фэйсбук</a>
+        <a class="social__link social__link--twitter" href="https://twitter.com/">Мы в Твиттер</a>
       </div>
 
       <div class="footer__copyright copyright">
