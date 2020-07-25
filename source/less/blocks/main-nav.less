@@ -1,4 +1,5 @@
 @gray: #ECECEC;
+@black: #000000;
 
 .main-nav__toggle {
   position: absolute;
@@ -21,9 +22,18 @@
   padding: 27px 0px;
   border: 1px solid @gray;
   text-align: center;
+}
+
+.main-nav__link {
+  display: inline-block;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
+  color: @black;
+  text-decoration: none;
+  &:visited {
+    color: @black;
+  }
 }
 
 
