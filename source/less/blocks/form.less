@@ -1,0 +1,107 @@
+.form {
+  margin-bottom: 55px;
+
+  & fieldset {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    border: none;
+  }
+}
+
+.form__legend {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 25px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: @light-green;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 56px;
+    width: 198px;
+    height: 1px;
+    background-color: @light-green;
+  }
+}
+
+.form__label {
+  position: relative;
+  padding-left: 65px;
+  margin-bottom: 45px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  cursor: pointer;
+  user-select: none;
+
+  &--radio::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 42px;
+    height: 42px;
+    border: 2px solid @dark-gray;
+    border-radius: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  &--checkbox::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 2px solid @dark-gray;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  &--shape {
+    margin-bottom: 22px;
+    padding-left: 0;
+  }
+}
+
+.form__shape-text {
+  margin-bottom: 22px;
+  border: none;
+  border-bottom: 2px solid @black;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form__textarea {
+  width: 238px;
+  height: 142px;
+  margin-bottom: 17px;
+  padding: 0;
+  padding-top: 17px;
+  padding-left: 18px;
+  border: 2px solid @dark-gray;
+  font-size: 17px;
+  line-height: 18px;
+  resize: none;
+}
+
+.form__notice {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  color: @dark-gray;
+}
+
+.form__button {
+  width: 260px;
+  background-color: @white;
+  cursor: pointer;
+}

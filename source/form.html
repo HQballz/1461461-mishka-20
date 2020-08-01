@@ -39,26 +39,26 @@
       <form action="https://echo.htmlacademy.rus" class="form" method="get">
         <fieldset class="form__filter">
           <legend class="form__legend">Тип</legend>
-              <input type="radio" id="accessory" name="accessory" class="form__radio" checked>
-              <label for="accessory" class="form__label">Аксессуар для интерьера</label>
-              <input type="radio" id="toy" name="toy" class="form__radio">
-              <label for="toy" class="form__label">Детская игрушка</label>
+              <input type="radio" id="accessory" name="accessory" class="form__radio visually-hidden" checked>
+              <label for="accessory" class="form__label form__label--radio">Аксессуар для интерьера</label>
+              <input type="radio" id="toy" name="toy" class="form__radio visually-hidden">
+              <label for="toy" class="form__label form__label--radio">Детская игрушка</label>
         </fieldset>
 
         <fieldset class="form__filter">
           <legend class="form__legend">Цвет</legend>
-              <input type="checkbox" id="white" name="white" class="form__checkbox" checked>
-              <label for="white" class="form__label">Белый</label>
-              <input type="checkbox" id="gray" name="gray" class="form__checkbox" checked>
-              <label for="gray" class="form__label">Серый</label>
-              <input type="checkbox" id="tiffany" name="tiffany" class="form__checkbox">
-              <label for="tiffany" class="form__label">&laquo;Тиффани&raquo;</label>
-              <input type="checkbox" id="black" name="black" class="form__checkbox">
-              <label for="black" class="form__label">Черный</label>
-              <input type="checkbox" id="pink" name="pink" class="form__checkbox">
-              <label for="pink" class="form__label">Розовый</label>
-              <input type="checkbox" id="orange" name="orange" class="form__checkbox">
-              <label for="orange" class="form__label">Оранжевый</label>
+              <input type="checkbox" id="white" name="white" class="form__checkbox visually-hidden" checked>
+              <label for="white" class="form__label form__label--checkbox">Белый</label>
+              <input type="checkbox" id="gray" name="gray" class="form__checkbox visually-hidden" checked>
+              <label for="gray" class="form__label form__label--checkbox">Серый</label>
+              <input type="checkbox" id="tiffany" name="tiffany" class="form__checkbox visually-hidden">
+              <label for="tiffany" class="form__label form__label--checkbox">&laquo;Тиффани&raquo;</label>
+              <input type="checkbox" id="black" name="black" class="form__checkbox visually-hidden">
+              <label for="black" class="form__label form__label--checkbox">Черный</label>
+              <input type="checkbox" id="pink" name="pink" class="form__checkbox visually-hidden">
+              <label for="pink" class="form__label form__label--checkbox">Розовый</label>
+              <input type="checkbox" id="orange" name="orange" class="form__checkbox visually-hidden">
+              <label for="orange" class="form__label form__label--checkbox">Оранжевый</label>
         </fieldset>
 
         <fieldset class="form__shape">
@@ -71,7 +71,7 @@
           <input type="text" id="middle-name" name="middle-name" placeholder="Отчество, если желаете" class="form__shape-text">
           <label for="phone" class="form__legend form__label--shape">тел</label>
           <input type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" class="form__shape-text">
-          <label for="email" class="form__legend form__label--shape">e-mail</label>
+          <label for="email" class="form__legend form__label--shape form__label--email">e-mail</label>
           <input type="email" id="email" name="phone" placeholder="Ваш Email*" class="form__shape-text">
           <label for="textarea" class="form__legend form__label--shape">Доп</label>
           <textarea name="text" id="text" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу" class="form__textarea"></textarea>
