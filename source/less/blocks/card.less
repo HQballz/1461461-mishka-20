@@ -1,13 +1,17 @@
-@border-color: #ececec;
-@dark-gray: #444444;
-
 .catalog {
   margin-bottom: 30px;
 }
 
 .card {
   margin-bottom: 30px;
-  border: 1px solid @border-color
+}
+
+.catalog__description {
+  display: flex;
+  flex-direction: column;
+  width: 258px;
+  margin-top: -10px;
+  border: 1px solid @gray;
 }
 
 .card__title {
@@ -19,14 +23,25 @@
 }
 
 .card__characteristics-min {
-  margin-bottom: 10px;
-  padding-left: 28px;
+  width: 204px;
+  margin-top: 0;
+  margin-bottom: 22px;
+  margin-left: 28px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid @gray;
   font-size: 13px;
   line-height: 30px;
   color: @dark-gray;
 }
 
+.card__add-price {
+  display: flex;
+  justify-content: space-between;
+  width: 232px;
+}
+
 .card__price {
+  margin-bottom: 26px;
   padding-left: 28px;
   font-size: 15px;
   line-height: 24px;
@@ -34,6 +49,8 @@
 }
 
 .card__add {
-  display: inline-block;
-  padding-bottom: 26px;
+  width: 20px;
+  height: 20px;
+  outline: 1px solid blue;
+  background-color: green;
 }
