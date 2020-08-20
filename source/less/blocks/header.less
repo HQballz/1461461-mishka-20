@@ -1,12 +1,17 @@
 .header {
+  display: flex;
+  flex-direction: column;
   width: 320px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: @tablet) {
+    flex-direction: row;
+  }
 }
 
 .header__logo {
-  display: block;
   width: 86px;
   padding: 22px 116px;
   border: 1px solid @gray;
