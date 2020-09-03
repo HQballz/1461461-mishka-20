@@ -12,6 +12,10 @@
       "text text"
       "name sliders";
   }
+
+  @media (min-width: @desktop) {
+    width: @desktop-width;
+  }
 }
 
 .review__title {
@@ -59,8 +63,18 @@
   border: 1px solid @gray;
   background-color: @white;
   cursor: pointer;
+
+  @media (min-width: @tablet) {
+    margin: 39px 19px 0 0;
+  }
 }
 
 .review__button {
   margin-bottom: 45px;
+
+  @media (min-width: @tablet) {
+    grid-area: button;
+    justify-self: end;
+    width: 175px;
+  }
 }

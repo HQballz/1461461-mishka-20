@@ -1,5 +1,13 @@
 .contacts {
   margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @desktop) {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: @desktop-width;
+  }
 }
 
 .contacts__text {
@@ -9,6 +17,11 @@
 
   @media (min-width: @tablet) {
     width: @tablet-width;
+  }
+
+  @media (min-width: @desktop) {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -28,6 +41,7 @@
 .contacts__definition-list {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   margin-top: 0;
   margin-bottom: 33px;
   color: @dark-gray;
@@ -37,6 +51,11 @@
     font-size: 17px;
     line-height: 30px;
   }
+}
+
+.contacts__item {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contacts__type {
@@ -55,6 +74,10 @@
 
   & img {
     vertical-align: bottom;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 0;
   }
 }
 

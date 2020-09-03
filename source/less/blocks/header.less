@@ -8,6 +8,10 @@
   @media (min-width: @tablet) {
     width: @tablet-width;
   }
+
+  @media (min-width: @desktop) {
+    width: @desktop-width;
+  }
 }
 
 .header__logo {
@@ -17,6 +21,11 @@
 
   @media (min-width: @tablet) {
     grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  @media (min-width: @desktop) {
+    grid-column-start: 2;
     grid-row-start: 1;
   }
 }
