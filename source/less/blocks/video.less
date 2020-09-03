@@ -1,6 +1,14 @@
 .video {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 58px;
   border: 1px solid @gray;
+
+  @media (min-width: @tablet) {
+    width: @tablet-width;
+  }
 }
 
 .video__title {
@@ -23,6 +31,9 @@
 .video__player {
   position: relative;
   margin-bottom: 35px;
+  @media (min-width: @tablet) {
+    order: -1;
+  }
 }
 
 .video__pin {

@@ -1,18 +1,22 @@
 .header {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-  margin-bottom: 30px;
+  position: relative;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
+  z-index: 1;
 
   @media (min-width: @tablet) {
-    flex-direction: row;
+    width: @tablet-width;
   }
 }
 
 .header__logo {
-  width: 86px;
+  display: block;
   padding: 22px 116px;
   border: 1px solid @gray;
+
+  @media (min-width: @tablet) {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
 }

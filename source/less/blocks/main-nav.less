@@ -2,6 +2,11 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: @tablet) {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }
 
 .main-nav__toggle {
@@ -16,14 +21,30 @@
 .main-nav__list {
   margin-top: 0;
   margin-bottom: 0;
-  margin-right: auto;
-  margin-left: auto;
   padding-left: 0;
   list-style: none;
+
+  @media (min-width: @tablet) {
+    display: flex;
+
+    &--left {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 2;
+    }
+
+    &--right {
+      justify-content: flex-end;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 1;
+    }
+  }
 }
 
 .main-nav__item {
-  width: 318px;
   margin: 0;
   padding: 27px 0;
   border: 1px solid @gray;
