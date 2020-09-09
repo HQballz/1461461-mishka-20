@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Open sans";
-  src: local("Open sans") url("../fonts/opensans.woff2") format("woff2"), url("../../fonts/opensans.woff") format("woff");
+  src: local("Open sans") url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Open sans";
-  src: local("Open sans Bold") url("../fonts/opensansbold.woff2") format("woff2"), url("../../fonts/opensansbold.woff") format("woff");
+  src: local("Open sans Bold") url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -19,7 +19,6 @@
 }
 
 .body {
-  width: 320px;
   margin-left: auto;
   margin-right: auto;
   font-family: "Open sans", "arial", sans-serif;
@@ -35,11 +34,33 @@
   line-height: 30px;
   font-weight: bold;
   color: @black;
+
+  @media (min-width: @tablet) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
   color: @black;
+
+  @media (min-width: @tablet) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

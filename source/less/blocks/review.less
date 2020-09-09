@@ -1,10 +1,35 @@
 .review {
+  width: @mobile-width;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 38px;
+
+  @media (min-width: @tablet) {
+    display: grid;
+    width: @tablet-width;
+    grid-template-areas:
+      "title button"
+      "text text"
+      "name sliders";
+  }
+
+  @media (min-width: @desktop) {
+    width: @desktop-width;
+  }
+}
+
+.review__title {
+  grid-area: title;
 }
 
 .review__text {
   margin-bottom: 33px;
   color: @dark-gray;
+  grid-area: text;
+}
+
+.review__contacts {
+  grid-area: name;
 }
 
 .review__name {
@@ -24,16 +49,32 @@
 
 .review__sliders {
   display: flex;
+
+  @media (min-width: @tablet) {
+    justify-content: flex-end;
+    grid-area: sliders;
+  }
 }
 
 .review__slider-button {
+  grid-area: button;
   width: 130px;
   height: 52px;
   border: 1px solid @gray;
   background-color: @white;
   cursor: pointer;
+
+  @media (min-width: @tablet) {
+    margin: 39px 19px 0 0;
+  }
 }
 
 .review__button {
   margin-bottom: 45px;
+
+  @media (min-width: @tablet) {
+    grid-area: button;
+    justify-self: end;
+    width: 175px;
+  }
 }

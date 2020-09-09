@@ -1,34 +1,61 @@
 .intro {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  padding-top: 73px;
   min-height: 372px;
   background: url("../img/hero-mobile@1x.jpg") no-repeat 50% 50%;
   background-size: cover;
+  z-index: -1;
 }
 
 .intro__title {
-  width: 260px;
-  padding-top: 73px;
-  padding-bottom: 120px;
+  width: @mobile-width;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 154px;
   text-align: center;
+
+  @media (min-width: @tablet) {
+    width: @tablet-width;
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 372px;
+  }
 }
 
 .intro__examples {
-  width: 320px;
-  height: 206px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
+
+  @media (min-width: @tablet) {
+    flex-direction: row;
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop) {
+    width: @desktop-width;
+  }
 }
 
 .intro__item {
   display: block;
-  width: 130px;
+  width: 100%;
   padding: 24px 160px 31px 30px;
   color: @white;
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
   text-decoration: none;
+
+  @media (min-width: @tablet) {
+    padding: 25px 167px 34px 36px;
+  }
 
   &--interior {
     background-color: @light-green;

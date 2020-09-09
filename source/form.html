@@ -7,20 +7,22 @@
   </head>
   <body class="body">
     <header class="header">
-      <a class="header__logo" href="index.html">
-        <img src="img/logo-mobile.svg" width="85" height="35" alt="Магазин Мишка">
-      </a>
       <nav class="main-nav">
+        <a class="header__logo" href="index.html">
+          <img src="img/logo-mobile.svg" width="85" height="35" alt="Магазин Мишка">
+        </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list--left">
           <li class="main-nav__item">
             <a href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Вязание на заказ</a>
+            <a href="form.html">Вязание на заказ </a>
           </li>
+        </ul>
+        <ul class="main-nav__list main-nav__list--right">
           <li class="main-nav__item">
             <a href="#">Поиск по сайту</a>
           </li>
@@ -28,6 +30,15 @@
             <a href="#">Корзина: пока пуста</a>
           </li>
         </ul>
+        <ul class="main-nav__list main-nav__list--bottom">
+          <li class="main-nav__item">
+              <a href="#">Новые поступления</a>
+          </li>
+          <li class="main-nav__item">
+              <a href="#">Распродажа</a>
+          </li>
+        </ul>
+        <span class="main-nav__delivery">Бесплатная доставка по России</span>
       </nav>
       <div class="title-background">
         <h1 class="title">Вязание на заказ</h1>

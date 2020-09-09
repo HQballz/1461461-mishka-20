@@ -1,7 +1,15 @@
 .title-background {
-  width: 320px;
+  width: 100%;
   padding: 73px 0;
   margin-left: auto;
   margin-right: auto;
   background-color: @light-gray;
+
+  @media (min-width: @tablet) {
+    margin-top: -85px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-top: -30px;
+  }
 }

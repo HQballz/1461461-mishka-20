@@ -1,6 +1,21 @@
 .video {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 58px;
   border: 1px solid @gray;
+
+  @media (min-width: @tablet) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    width: @desktop-width;
+  }
 }
 
 .video__title {
@@ -18,11 +33,29 @@
     background-color: green;
     background-position: center;
   }
+
+  @media (min-width: @desktop) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 }
 
 .video__player {
   position: relative;
   margin-bottom: 35px;
+
+  @media (min-width: @tablet) {
+    order: -1;
+  }
+
+  @media (min-width: @desktop) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
 }
 
 .video__pin {
@@ -39,6 +72,18 @@
   font-size: 13px;
   line-height: 24px;
   color: @dark-gray;
+
+  @media (min-width: @tablet) {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
 }
 
 .video__button {

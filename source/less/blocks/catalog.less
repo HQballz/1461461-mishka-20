@@ -1,0 +1,15 @@
+.catalog {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop) {
+    display: flex;
+    width: @desktop-width;
+    justify-content: space-between;
+  }
+}
