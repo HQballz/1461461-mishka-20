@@ -53,14 +53,67 @@
   line-height: 20px;
   font-weight: bold;
 
-  &:last-child {
-    margin: 0;
-  }
-
-  &::before {
+  &--ecology::before {
     content: "";
     display: block;
     width: 100px;
     height: 86px;
+    background-image: url("../../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  &--Scandinavian::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 86px;
+    background-image: url("../../img/icon-feature-money.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  &--likes::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 86px;
+    background-image: url("../../img/icon-feature-heart.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  &--connection::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 86px;
+    background-image: url("../../img/icon-feature-ball.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  &--support::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 86px;
+    background-image: url("../../img/icon-feature-rocket.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  &--gift::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 86px;
+    background-image: url("../../img/icon-feature-gift.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  &:last-child {
+    margin: 0;
   }
 }
