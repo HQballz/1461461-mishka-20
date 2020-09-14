@@ -49,6 +49,7 @@
 
 .review__sliders {
   display: flex;
+  margin-bottom: 38px;
 
   @media (min-width: @tablet) {
     justify-content: flex-end;
@@ -63,6 +64,16 @@
   border: 1px solid @gray;
   background-color: @white;
   cursor: pointer;
+
+  &--left {
+    background: url("../../img/icon-left-arrow.svg") no-repeat;
+    background-position: center;
+  }
+
+  &--right {
+    background: url("../../img/icon-right-arrow.svg") no-repeat;
+    background-position: center;
+  }
 
   @media (min-width: @tablet) {
     margin: 39px 19px 0 0;
