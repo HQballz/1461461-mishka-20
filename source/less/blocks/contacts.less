@@ -26,6 +26,7 @@
 }
 
 .contacts__title {
+  position: relative;
   margin-top: 0;
   margin-bottom: 27px;
   font-size: 18px;
@@ -35,6 +36,22 @@
   @media (min-width: @tablet) {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 49px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 1px;
+      width: 47px;
+      height: 81px;
+      background-image: url("../../img/icon-flag.svg");
+    }
+  }
+
+  @media (min-width: @desktop) {
+    &::before {
+      left: -64px;
+    }
   }
 }
 
@@ -47,9 +64,14 @@
   color: @dark-gray;
 
   @media (min-width: @tablet) {
+    flex-direction: row;
     gap: 30px;
     font-size: 17px;
     line-height: 30px;
+  }
+
+  @media (min-width: @desktop) {
+    flex-direction: column;
   }
 }
 
