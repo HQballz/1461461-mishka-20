@@ -114,6 +114,34 @@
 
   @media (min-width: @tablet) {
     border: none;
+
+    &--search {
+      display: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 26px;
+        width: 18px;
+        height: 18px;
+        background-image: url("../../img/icon-search.svg");
+        opacity: 0.2;
+      }
+    }
+
+    &--cart {
+      display: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 26px;
+        width: 21px;
+        height: 18px;
+        background-image: url("../../img/icon-cart.svg");
+        opacity: 0.2;
+      }
+    }
   }
 }
 
